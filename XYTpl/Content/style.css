@@ -1,0 +1,48 @@
+*{margin: 0px; padding: 0px;}
+ul li{list-style: none;}
+
+.navbar.navbar-default{background: #FFFFFF;height: 80px;}
+.navbar .navbar-brand img{display: inline;margin-top: -5px;}
+#xynav{background: #FFFFFF;}
+
+#xynav a:hover{
+	color: #3498db;
+}
+#xynav .active a{
+	color: #3498db;
+}
+#xynav .active a:hover{
+	color: #777;
+}
+
+#xyslide{
+	margin-top: 50px;
+}
+
+#xyservice{
+	margin-top: 40px;
+	line-height: 40px;
+}
+#xyservice li span{
+	display: block;
+	width: 123px;
+	height: 123px;
+	background: url(icons.png) no-repeat;
+	margin: 0px auto;
+	position: relative;
+}
+#xyservice .xyicon-1{
+	background-position: 0px 0px;
+}
+#xyservice .xyicon-2{
+	background-position: -123px 0px;
+}
+#xyservice .xyicon-3{
+	background-position: -246px 0px;
+}
+#xyservice .xyicon-4{
+	background-position: -369px 0px;
+}
+#xyservice li.on{
+	color: #f00;
+}

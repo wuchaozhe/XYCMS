@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>新意网络科技有限公司</title>
+		<link rel="stylesheet" href="Content/style.css" />
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#xynav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="Content/logo.png"/>XinYes</a>
+				</div>
+				
+				<div id="xynav" class="navbar-collapse collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">首页</a></li>
+						<li><a href="#">关于新意</a></li>
+						<li><a href="#">产品中心</a></li>
+						<li><a href="#">服务支持</a></li>
+						<li><a href="#">成功案例</a></li>
+						<li><a href="#">新闻资讯</a></li>
+						<li><a href="#">人才招聘</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="xyslide" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#xyslide" data-slide-to="0" class="active"></li>
+				<li data-target="#xyslide" data-slide-to="1"></li>
+				<li data-target="#xyslide" data-slide-to="2"></li>
+			</ol>
+			
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="Content/banner1.jpg" class="center-block" />
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="Content/banner1.jpg" class="center-block" />
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="Content/banner1.jpg" class="center-block" />
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+			
+			<a class="left carousel-control" href="#xyslide" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#xyslide" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+		<div id="xyservice" class="container">
+			<ul class="row">
+				<li class="col-sm-3 text-center">
+					<span class="xyicon-1"></span>
+					<p>策划设计</p>
+				</li>
+				<li class="col-sm-3 text-center">
+					<span class="xyicon-2"></span>
+					<p>移动开发</p>
+				</li>
+				<li class="col-sm-3 text-center">
+					<span class="xyicon-3"></span>
+					<p>网站、软件</p>
+				</li>
+				<li class="col-sm-3 text-center">
+					<span class="xyicon-4"></span>
+					<p>在线交易平台</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="jumbotron">
+			<div class="container">
+				<h3>新意做什么 what we are doing</h3>
+				<p>
+					无锡市销升客网络科技有限公司是一家专门从事网站搭建和推广的网络公司。无锡销升客网络科技有限公司倾力打造的直销家园网，目标做国内面对直销行业最大、最专业、最具影响力的在线交易门户平台，成为直销人掌握最新行业资讯和建设个人网站的汇集地。
+无锡市销升客网络科技有限公司旗下的直销家园网本身不销售任何直销产品，也不隶属于某家直销公司或某个直销团队，直销家园网不是直销公司或直销团队的竞争对手，而是所有直销人的合作伙伴。直销家园网，属于全球直销人的家园网！
+				</p>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="Content/jquery-1.12.0.min.js" ></script>
+		<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript">
+			$("#xyservice li").hover(function(){
+				$(this).addClass("on");
+				$(this).find("span").animate({'background-position-y':"-123px"},200);
+			},function(){
+				$(this).removeClass("on");
+				$(this).find("span").animate({'background-position-y':"0px"},200);
+			});
+		</script>
+	</body>
+</html>
