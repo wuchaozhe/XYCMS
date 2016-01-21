@@ -12,6 +12,10 @@ ul li{list-style: none;}
 	margin-top: 70px;
 }
 
+.index_case_head{display: block;border-bottom: 1px dotted #E4E9F0;}
+.index_case_head h3{display: inline-block;border-bottom: 2px solid #3498DB;margin: 0px 0px -2px 0px; line-height: 50px;}
+.index_case_head a{ line-height: 50px;}
+
 #xyservice{
 	margin-top: 40px;
 	line-height: 40px;
@@ -39,3 +43,20 @@ ul li{list-style: none;}
 #xyservice li.on{
 	color: #f00;
 }
+
+.hr{margin: 0px;border: #1B6D85 2px solid;}
+
+.jumbotron.index_about{padding: 0px;margin-bottom: 0px;}
+.index_about .row>div>h3{color:#f65a17; font-size:24px;line-height: 48px;}
+.index_about .row>div>h3>span{font-size: 18px;padding-left: 10px;}
+.index_about .row>div>p{font-size: 14px;line-height: 28px;}
+
+.index_partner ul{text-align: center;}
+.index_partner ul li{
+	display: inline-block;border: #EEEEEE 1px solid;width: 110px;height: 110px;overflow: hidden;margin-left: 5px;margin-right: 5px;margin-bottom: 10px;
+}
+.index_partner ul li img{max-width: 100%;padding: 10px;vertical-align: middle;}
+.index_partner ul li:hover div{
+	
+}
+.index_partner ul li div{background: #3498db;top: 0px;left: 0px;}
