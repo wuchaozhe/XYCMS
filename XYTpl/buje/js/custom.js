@@ -6,6 +6,7 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault(); */
+       alert($(this.hash).offset().top);
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
         return false;
     });
