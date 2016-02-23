@@ -1,6 +1,13 @@
 @media only screen and (min-width: 768px) {
 	#header{padding-top: 10px;padding-bottom: 10px;}
 	.header-scroll{padding: 0px !important;}
+	#main-carousel{margin-top: 70px;}
+
+	/*.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev{
+		height: 400px;
+	}*/
+}
+@media only screen and (max-width: 768px) {
+	#main-carousel{margin-top: 50px;}
 }
 #header{background: #FFFFFF;}
-#main-carousel{margin-top: 70px;}
