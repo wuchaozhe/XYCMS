@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#p").hover(function(){
+					$("#c").addClass("overload");
+					$("#c").removeClass("moveload");
+				},function(){
+					$("#c").addClass("moveload");
+					$("#c").removeClass("overload");
+				});
+			});
+		</script>
+		<style type="text/css">
+			.overload{
+				width: 100px;height: 30px;background: blue;position: relative;top: 80px;display: block;
+			}
+			.moveload{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="p" style="width: 100px;height: 100px;background: #ADADAD;">
+			
+			<a id="c" class="moveload" href="http://www.baidu.com/" target="_blank">
+			</a>
+		</div>
+	</body>
+</html>
