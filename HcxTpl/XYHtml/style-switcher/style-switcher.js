@@ -58,16 +58,16 @@ jQuery(document).ready(function($) {
 			$('.style-switcher .styleChange li[data-style="'+tp_stylesheet+'"]').addClass("selected");
 		} else {
 			if (link.length>0) {
-				link.attr('href','css/skins/' + tp_stylesheet + '.css');
+				link.attr('href','templets/default/css/skins/' + tp_stylesheet + '.css');
 				$('.style-switcher .styleChange li[data-style="'+tp_stylesheet+'"]').addClass("selected");
 				if ($(".header-page-dark").length>0) {
-					document.getElementById("logo_img").src="images/logo_dark_header_" + tp_stylesheet + ".png";
+					document.getElementById("logo_img").src="templets/default/images/logo_dark_header_" + tp_stylesheet + ".png";
 				} else {
 					if ($("#logo_img").length>0) {
-						document.getElementById("logo_img").src="images/logo_" + tp_stylesheet + ".png";
+						document.getElementById("logo_img").src="templets/default/images/logo_" + tp_stylesheet + ".png";
 					};
 					if ($("#logo-footer").length>0) {
-						document.getElementById("logo-footer").src="images/logo_" + tp_stylesheet + ".png";
+						document.getElementById("logo-footer").src="templets/default/images/logo_" + tp_stylesheet + ".png";
 					};
 				};
 			};
@@ -129,15 +129,15 @@ jQuery(document).ready(function($) {
 					tp_stylesheet = $this.data('style');
 				$(".style-switcher .styleChange .selected").removeClass("selected");
 				$this.addClass("selected");
-				link.attr('href', 'css/skins/' + tp_stylesheet + '.css');
+				link.attr('href', 'templets/default/css/skins/' + tp_stylesheet + '.css');
 				if ($(".header-page-dark").length>0) {
-					document.getElementById("logo_img").src="images/logo_dark_header_" + tp_stylesheet + ".png";
+					document.getElementById("logo_img").src="templets/default/images/logo_dark_header_" + tp_stylesheet + ".png";
 				} else {
 					if ($("#logo_img").length>0) {
-						document.getElementById("logo_img").src="images/logo_" + tp_stylesheet + ".png";
+						document.getElementById("logo_img").src="templets/default/images/logo_" + tp_stylesheet + ".png";
 					};
 					if ($("#logo-footer").length>0) {
-						document.getElementById("logo-footer").src="images/logo_" + tp_stylesheet + ".png";
+						document.getElementById("logo-footer").src="templets/default/images/logo_" + tp_stylesheet + ".png";
 					};
 				};
 				$.cookie('tp_stylesheet', tp_stylesheet, 365);
@@ -146,15 +146,15 @@ jQuery(document).ready(function($) {
 					tp_stylesheet_no_cookie = $this.data('style');
 				$(".style-switcher .styleChange .selected").removeClass("selected");
 				$this.addClass("selected");
-				link_no_cookie.attr('href', 'css/skins/' + tp_stylesheet_no_cookie + '.css');
+				link_no_cookie.attr('href', 'templets/default/css/skins/' + tp_stylesheet_no_cookie + '.css');
 				if ($(".header-page-dark").length>0) {
-					document.getElementById("logo_img").src="images/logo_dark_header_" + tp_stylesheet_no_cookie + ".png";
+					document.getElementById("logo_img").src="templets/default/images/logo_dark_header_" + tp_stylesheet_no_cookie + ".png";
 				} else {
 					if ($("#logo_img").length>0) {
-						document.getElementById("logo_img").src="images/logo_" + tp_stylesheet_no_cookie + ".png";
+						document.getElementById("logo_img").src="templets/default/images/logo_" + tp_stylesheet_no_cookie + ".png";
 					};
 					if ($("#logo-footer").length>0) {
-						document.getElementById("logo-footer").src="images/logo_" + tp_stylesheet_no_cookie + ".png";
+						document.getElementById("logo-footer").src="templets/default/images/logo_" + tp_stylesheet_no_cookie + ".png";
 					};
 				};
 			};
@@ -246,12 +246,12 @@ jQuery(document).ready(function($) {
 			var tp_stylesheet = $.cookie('tp_stylesheet');
 			$('.style-switcher .styleChange li.selected').removeClass("selected");
 			$('.style-switcher .styleChange li[data-style="'+tp_stylesheet+'"]').addClass("selected");
-			link.attr('href', 'css/skins/' + tp_stylesheet + '.css');
+			link.attr('href', 'templets/default/css/skins/' + tp_stylesheet + '.css');
 			if ($("#logo_img").length>0) {
-				document.getElementById("logo_img").src="images/logo_" + tp_stylesheet + ".png";
+				document.getElementById("logo_img").src="templets/default/images/logo_" + tp_stylesheet + ".png";
 			};
 			if ($("#logo-footer").length>0) {
-				document.getElementById("logo-footer").src="images/logo_" + tp_stylesheet + ".png";
+				document.getElementById("logo-footer").src="templets/default/images/logo_" + tp_stylesheet + ".png";
 			};
 		});
 
