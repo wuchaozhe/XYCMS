@@ -25,7 +25,7 @@
 					<!-- ================ -->
 					<div id="header-top-second"  class="clearfix text-right">
 						<ul class="list-inline">
-							<li><i class="fa fa-phone pr-5 pl-10"></i>181 2007 3330</li>
+							<li><i class="fa fa-phone pr-5 pl-10"></i>132 9120 8896</li>
 							<li><i class="fa fa-envelope-o pr-5 pl-10"></i> admin@xinyes.com</li>
 						</ul>
 					</div>
@@ -54,7 +54,7 @@
 
 						<!-- logo -->
 						<div id="logo" class="logo">
-							<a href="index.html"><img id="logo_img" src="{dede:global.cfg_templets_skin/}/images/logo_light_blue.png" alt="The Project"></a>
+							<a href="{dede:global.cfg_basehost/}"><img id="logo_img" src="{dede:global.cfg_templets_skin/}/images/logo_light_blue.png" alt="The Project"></a>
 						</div>
 
 						<!-- name-and-slogan -->
@@ -102,39 +102,21 @@
 									<ul class="nav navbar-nav navbar-right">
 
 										<!-- mega-menu start -->													
-										<li class="active">
-											<a href="index.html">首页</a>
+										<li class="">
+											<a href="{dede:global.cfg_cmsurl/}/">首页</a>
 										</li>
 										<!-- mega-menu end -->
-										<!-- mega-menu start -->
-										<li class="">
-											<a href="about.html">关于新意</a>
-										</li>
-										<!-- mega-menu end -->
-										<li class="">
-											<a href="contact.html">产品中心</a>
-										</li>
-										<!-- mega-menu start -->													
-										<li class="">
-											<a href="blog.html">服务支持</a>
-										</li>
-										<!-- mega-menu end -->												
-										<li class="">
-											<a href="sitemap.html">成功案例</a>
-										</li>											
-										<li class="">
-											<a href="sitemap.html">新闻资讯</a>
-										</li>											
-										<li class="">
-											<a href="sitemap.html">人才招聘</a>
-										</li>	
+
+      	{dede:channel type='top' row='6' currentstyle="<li class='active'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+      	<li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+      	{/dede:channel}
 									</ul>
 									<!-- main-menu end -->
 									
 									<!-- header buttons -->
 									<div class="header-dropdown-buttons">
-										<a href="index-shop.html" class="btn btn-sm hidden-xs radius-50 btn-default">Catact <i class="fa fa-envelope-o pl-5"></i></a>
-										<a href="index-shop.html" class="btn btn-lg visible-xs radius-50 btn-block btn-default">Catact <i class="fa fa-envelope-o pl-5"></i></a>
+										<a href="{dede:global.cfg_cmsurl/}/contact/" class="btn btn-sm hidden-xs radius-50 btn-default">Catact <i class="fa fa-envelope-o pl-5"></i></a>
+										<a href="{dede:global.cfg_cmsurl/}/contact/" class="btn btn-lg visible-xs radius-50 btn-block btn-default">Catact <i class="fa fa-envelope-o pl-5"></i></a>
 									</div>
 									<!-- header buttons end-->
 									
