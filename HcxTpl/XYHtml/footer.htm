@@ -17,22 +17,20 @@
 					</div>
 					<div class="col-md-3">
 						<div class="footer-content">
-							<h2 class="title">链接</h2>
+							<h2 class="title">导航</h2>
 							<div class="separator-2"></div>
 							<nav>
 								<ul class="nav nav-pills nav-stacked">
-                                	<li><a href="index.html">首页</a></li>
-									<li><a href="about.html">关于我们</a></li>
-									<li><a href="contact.html">联系我们</a></li>
-                                	<li><a href="blog.html">文章</a></li>
-                                	<li><a href="sitemap.html">站点地图</a></li>
+							      	{dede:channel type='top' row='7'}
+							      	<li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+							      	{/dede:channel}
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="footer-content">
-							<h2 class="title">标签</h2>
+							<h2 class="title">友情链接</h2>
 							<div class="separator-2"></div>
 							<div class="tags-cloud">
 								<div class="tag">
@@ -111,7 +109,7 @@
 			<div class="subfooter-inner">
 				<div class="row">
 					<div class="col-md-12">
-						<p class="text-center">Copyright © 2016 The Project by <a target="_blank" class="link-light" href="">XinYes.Com</a>. All Rights Reserved</p>
+						<p class="text-center">{dede:global.cfg_powerby/}</p>
 					</div>
 				</div>
 			</div>
